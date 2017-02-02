@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html
     xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://java.sun.com/jsf/html">
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:head>
         <title>Pesquisa</title>
@@ -17,6 +18,15 @@
             <br/>
             <h:commandButton value="Save" action="#{form.save}"/>
         </h:form>
+
+        <h:dataTable var="formulario" value="#{form.formularios}">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Nome"/>
+                </f:facet>
+                <h:outputText value="#{formulario.nome}"/>
+            </h:column>
+        </h:dataTable>
 
     </h:body>
 

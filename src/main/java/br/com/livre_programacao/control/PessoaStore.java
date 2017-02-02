@@ -6,6 +6,7 @@
 package br.com.livre_programacao.control;
 
 import br.com.livre_programacao.pessoa.entity.Pessoa;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -26,4 +27,9 @@ public class PessoaStore {
         em.flush();
         System.out.format("\n=== Debug ===\nPessoaStore.store() : Pessoa id %s", pessoa.getId());
     }
+
+    public List<Pessoa> getFormularios() {
+        return em.createQuery("SELECT P FROM Pessoa p").getResultList();
+    }
+
 }

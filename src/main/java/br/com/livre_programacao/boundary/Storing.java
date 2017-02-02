@@ -7,6 +7,7 @@ package br.com.livre_programacao.boundary;
 
 import br.com.livre_programacao.control.PessoaStore;
 import br.com.livre_programacao.pessoa.entity.Pessoa;
+import java.util.List;
 import javax.ejb.Asynchronous;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -25,6 +26,10 @@ public class Storing {
     public void store(Pessoa formulario) {
         System.out.format("\n=== Debug ===\nStoring.store() : Pessoa %s", formulario);
         pessoaStore.store(formulario);
+    }
+
+    public List<Pessoa> getFormularios() {
+        return pessoaStore.getFormularios();
     }
 
 }
