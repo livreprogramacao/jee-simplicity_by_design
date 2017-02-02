@@ -19,8 +19,13 @@
             <h:commandButton value="Save" action="#{form.save}"/>
         </h:form>
 
-        <p><h:outputText value="Formulários" rendered="#{form.formularios.size() > 0}" /></p>
         <h:dataTable var="formulario" value="#{form.formularios}" rendered="#{form.formularios.size() > 0}">
+            <f:facet name="header">
+                <p>
+                    <h:outputText value="Formulários" />
+                </p>
+            </f:facet>
+
             <h:column>
                 <f:facet name="header">
                     <h:outputText value="Id"/>
@@ -33,6 +38,13 @@
                 </f:facet>
                 <h:outputText value="#{formulario.nome}"/>
             </h:column>
+
+            <f:facet name="footer">
+                <p>
+                    <h:outputText value="#{form.formularios.size()}  formularios existentes." />
+                </p>
+            </f:facet>
+
         </h:dataTable>
 
     </h:body>
