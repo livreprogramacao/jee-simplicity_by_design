@@ -19,7 +19,8 @@
             <h:commandButton value="Save" action="#{form.save}"/>
         </h:form>
 
-        <h:dataTable var="formulario" value="#{form.formularios}">
+        <p><h:outputText value="Formulários" rendered="#{form.formularios.size() > 0}" /></p>
+        <h:dataTable var="formulario" value="#{form.formularios}" rendered="#{form.formularios.size() > 0}">
             <h:column>
                 <f:facet name="header">
                     <h:outputText value="Id"/>
