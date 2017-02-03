@@ -7,7 +7,7 @@
     <version>0.1</version>
     <packaging>war</packaging>
 
-    <name>crud</name>
+    <name>Simplicity by design - Formulário com 20 campos</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
