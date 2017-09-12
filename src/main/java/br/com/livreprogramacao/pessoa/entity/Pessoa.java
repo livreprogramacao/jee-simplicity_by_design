@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.livre_programacao.pessoa.entity;
+package br.com.livreprogramacao.pessoa.entity;
 
 import java.util.Objects;
 import javax.persistence.Column;

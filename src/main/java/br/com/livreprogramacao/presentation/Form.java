@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.livre_programacao.presentation;
+package br.com.livreprogramacao.presentation;
 
-import br.com.livre_programacao.boundary.Storing;
-import br.com.livre_programacao.pessoa.entity.Pessoa;
+import br.com.livreprogramacao.boundary.Storing;
+import br.com.livreprogramacao.pessoa.entity.Pessoa;
 import java.util.List;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

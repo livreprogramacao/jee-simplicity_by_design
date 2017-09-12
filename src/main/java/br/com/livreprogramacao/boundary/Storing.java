@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.livre_programacao.boundary;
+package br.com.livreprogramacao.boundary;
 
-import br.com.livre_programacao.control.PessoaStore;
-import br.com.livre_programacao.pessoa.entity.Pessoa;
+import br.com.livreprogramacao.control.PessoaStore;
+import br.com.livreprogramacao.pessoa.entity.Pessoa;
 import java.util.List;
 import javax.ejb.Asynchronous;
 import javax.ejb.Stateless;
